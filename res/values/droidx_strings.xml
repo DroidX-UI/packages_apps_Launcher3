@@ -127,4 +127,11 @@
 
     <!-- Background opacity -->
     <string name="background_opacity_title">Background opacity\nWarning: Use at your own risk</string>
+
+    <!-- About info -->
+    <string name="about_droidx_title" translatable="false">@string/droidx_app_name</string>
+    <string name="about_thanks_cat">Special thanks to</string>
+    <string name="about">About</string>
+    <string name="about_summary">Info about the DroidX-UI Launcher</string>
+    <string name="about_app_version">Version 15</string>
 </resources>
