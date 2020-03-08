@@ -17,4 +17,7 @@
 
     <!-- Application name -->
     <string name="droidx_app_name" translatable="false">DroidX-UI Launcher</string>
+
+    <!-- Folder titles -->
+    <string name="google_folder_title" translatable="false">Google</string>
 </resources>
