@@ -4767,6 +4767,7 @@ public abstract class RecentsView<ACTIVITY_TYPE extends StatefulActivity<STATE_T
                 mSplitSelectStateController.getActiveSplitStagePosition(), firstTaskEndingBounds,
                 secondTaskEndingBounds);
 
+	if (firstFloatingTaskView == null) return false;
         FloatingTaskView firstFloatingTaskView =
                 mSplitSelectStateController.getFirstFloatingTaskView();
         firstFloatingTaskView.getBoundsOnScreen(firstTaskStartingBounds);
@@ -4911,8 +4912,10 @@ public abstract class RecentsView<ACTIVITY_TYPE extends StatefulActivity<STATE_T
         mTempRectF.set(mTempRect);
         FloatingTaskView firstFloatingTaskView =
                 mSplitSelectStateController.getFirstFloatingTaskView();
-        firstFloatingTaskView.updateOrientationHandler(mOrientationHandler);
-        firstFloatingTaskView.update(mTempRectF, /*progress=*/1f);
+        if (firstFloatingTaskView != null) {
+            firstFloatingTaskView.updateOrientationHandler(mOrientationHandler);
+            firstFloatingTaskView.update(mTempRectF, /*progress=*/1f);
+        }
 
         PagedOrientationHandler orientationHandler = getPagedOrientationHandler();
         Pair<FloatProperty, FloatProperty> taskViewsFloat =
