@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.launcher3.blaze.settings;
+package com.android.launcher3.droidx.settings;
 
 import android.content.Context;
 import android.os.Bundle;

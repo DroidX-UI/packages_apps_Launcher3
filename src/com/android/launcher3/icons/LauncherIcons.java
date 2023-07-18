@@ -24,13 +24,13 @@ import com.android.launcher3.graphics.IconShape;
 import com.android.launcher3.graphics.LauncherPreviewRenderer;
 import com.android.launcher3.util.Themes;
 import com.android.launcher3.Utilities;
-import com.android.launcher3.blaze.icon.BlazeIconFactory;
+import com.android.launcher3.droidx.icon.DroidXIconFactory;
 
 /**
  * Wrapper class to provide access to {@link BaseIconFactory} and also to provide pool of this class
  * that are threadsafe.
  */
-public class LauncherIcons extends BlazeIconFactory implements AutoCloseable {
+public class LauncherIcons extends DroidXIconFactory implements AutoCloseable {
 
     private static final Object sPoolSync = new Object();
     private static LauncherIcons sPool;

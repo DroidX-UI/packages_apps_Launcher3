@@ -80,7 +80,7 @@ import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.folder.FolderIcon;
 import com.android.launcher3.icons.BitmapInfo;
 import com.android.launcher3.icons.LauncherIcons;
-import com.android.launcher3.blaze.icon.BlazeIconFactory;
+import com.android.launcher3.droidx.icon.DroidXIconFactory;
 import com.android.launcher3.model.BgDataModel;
 import com.android.launcher3.model.BgDataModel.FixedContainerItems;
 import com.android.launcher3.model.WidgetItem;
@@ -222,8 +222,8 @@ public class LauncherPreviewRenderer extends ContextWrapper
                 mDp.isTaskbarPresent ? 0 : currentWindowInsets.getSystemWindowInsetBottom());
         mDp.updateInsets(mInsets);
 
-        BlazeIconFactory iconFactory =
-                new BlazeIconFactory(context, mIdp.fillResIconDpi, mIdp.iconBitmapSize) { };
+        DroidXIconFactory iconFactory =
+                new DroidXIconFactory(context, mIdp.fillResIconDpi, mIdp.iconBitmapSize) { };
         BitmapInfo iconInfo = iconFactory.createBadgedIconBitmap(
                 new AdaptiveIconDrawable(
                         new ColorDrawable(Color.WHITE),

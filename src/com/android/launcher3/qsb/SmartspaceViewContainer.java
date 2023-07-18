@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.FrameLayout.LayoutParams;
 
-import com.android.launcher3.BlazeLauncher;
+import com.android.launcher3.DroidXLauncher;
 import com.android.launcher3.CustomLauncherModelDelegate;
 
 import com.android.launcher3.celllayout.CellLayoutLayoutParams;;
@@ -48,7 +48,7 @@ public class SmartspaceViewContainer extends FrameLayout implements PluginListen
         layoutParams.setMarginStart(getResources().getDimensionPixelSize(R.dimen.enhanced_smartspace_margin_start_launcher));
         addView(mView, layoutParams);
 
-        BlazeLauncher launcher = (BlazeLauncher) ActivityContext.lookupContext(context);
+        DroidXLauncher launcher = (DroidXLauncher) ActivityContext.lookupContext(context);
         launcher.getLauncherUnlockAnimationController().setSmartspaceView(mView);
 
         CustomLauncherModelDelegate delegate = (CustomLauncherModelDelegate) launcher.getModel().getModelDelegate();
@@ -64,7 +64,7 @@ public class SmartspaceViewContainer extends FrameLayout implements PluginListen
 
     @Override
     public void onPluginDisconnected(BcSmartspaceDataPlugin plugin) {
-        BlazeLauncher launcher = (BlazeLauncher) ActivityContext.lookupContext(getContext());
+        DroidXLauncher launcher = (DroidXLauncher) ActivityContext.lookupContext(getContext());
         mView.registerDataProvider(launcher.getSmartspacePlugin());
     }
 

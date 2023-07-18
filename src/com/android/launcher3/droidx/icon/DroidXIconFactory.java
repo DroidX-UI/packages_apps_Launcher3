@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.launcher3.blaze.icon;
+package com.android.launcher3.droidx.icon;
 
 import static android.graphics.Paint.DITHER_FLAG;
 import static android.graphics.Paint.FILTER_BITMAP_FLAG;
@@ -46,16 +46,16 @@ import com.android.launcher3.icons.BitmapInfo;
 import com.android.launcher3.icons.FixedScaleDrawable;
 import com.android.launcher3.icons.ShadowGenerator;
 
-public class BlazeIconFactory extends BaseIconFactory {
+public class DroidXIconFactory extends BaseIconFactory {
 
     private final IconPackStore mIconPackStore;
 
-    public BlazeIconFactory(Context context, int fillResIconDpi, int iconBitmapSize) {
+    public DroidXIconFactory(Context context, int fillResIconDpi, int iconBitmapSize) {
         super(context, fillResIconDpi, iconBitmapSize);
         mIconPackStore = new IconPackStore(context);
     }
 
-    public BlazeIconFactory(Context context, int fillResIconDpi, int iconBitmapSize,
+    public DroidXIconFactory(Context context, int fillResIconDpi, int iconBitmapSize,
             boolean shapeDetection) {
         super(context, fillResIconDpi, iconBitmapSize, shapeDetection);
         mIconPackStore = new IconPackStore(context);
