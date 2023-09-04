@@ -17,7 +17,8 @@
 <icons>
     <icon drawable="@array/grayscale_calendar_icons" package="com.google.android.calendar"/>
     <icon drawable="@array/grayscale_calendar_icons" package="com.android.calendar"/>
-    <icon drawable="@array/grayscale_clock_icons" package="com.google.android.deskclock"/>
+    <icon drawable="@drawable/themed_icon_calendar" package="org.lineageos.etar"/>
+    <icon drawable="@drawable/themed_icon_aosp_clock" package="com.google.android.deskclock"/>
     <icon drawable="@drawable/themed_icon_0h_h1" package="com.q42.ohhi"/>
     <icon drawable="@drawable/themed_icon_0h_n0" package="com.q42.ohno"/>
     <icon drawable="@drawable/themed_icon_1111dns" package="com.cloudflare.onedotonedotonedotone"/>
@@ -282,6 +283,7 @@
     <icon drawable="@drawable/themed_icon_camera" package="com.samsung.android.ruler"/>
     <icon drawable="@drawable/themed_icon_camera" package="com.oplus.camera" />
     <icon drawable="@drawable/themed_icon_camera" package="com.google.android.apps.cameralite"/>
+    <icon drawable="@drawable/themed_icon_camera" package="org.lineageos.aperture"/>
     <icon drawable="@drawable/themed_icon_camscanner" package="com.intsig.camscanner"/>
     <icon drawable="@drawable/themed_icon_canvas" package="com.canva.editor"/>
     <icon drawable="@drawable/themed_icon_capcut" package="com.lemon.lvoverseas"/>
@@ -922,6 +924,7 @@
     <icon drawable="@drawable/themed_icon_realme_link" package="com.realme.link"/>
     <icon drawable="@drawable/themed_icon_recorder" package="com.google.android.apps.recorder"/>
     <icon drawable="@drawable/themed_icon_recorder_s" package="com.dimowner.audiorecorder"/>
+    <icon drawable="@drawable/themed_icon_recorder_lineage" package="org.lineageos.recorder"/>
     <icon drawable="@drawable/themed_icon_reddit" package="com.reddit.frontpage"/>
     <icon drawable="@drawable/themed_icon_redlime" package="mendeleev.redlime"/>
     <icon drawable="@drawable/themed_icon_redtulum" package="com.sanjuan.redtulum"/>
