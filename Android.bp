@@ -336,6 +336,7 @@ android_library {
         "com_android_systemui_shared_flags_lib",
         "SettingsLib",
         "libGoogleFeed",
+        "framework-droidx.static",
         "bcsmartspace-google",
     ],
     manifest: "AndroidManifest-common.xml",

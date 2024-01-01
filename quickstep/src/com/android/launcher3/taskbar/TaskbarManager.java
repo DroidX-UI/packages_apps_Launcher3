@@ -79,7 +79,7 @@ import com.android.systemui.shared.system.QuickStepContract.SystemUiStateFlags;
 import com.android.systemui.unfold.UnfoldTransitionProgressProvider;
 import com.android.systemui.unfold.util.ScopedUnfoldTransitionProgressProvider;
 
-import org.derpfest.providers.DerpFestSettings;
+import com.droidx.providers.DroidXSettings;
 import android.provider.Settings;
 
 import java.io.PrintWriter;
@@ -115,7 +115,7 @@ public class TaskbarManager {
             Settings.Secure.NAV_BAR_KIDS_MODE);
 
     private static final Uri ENABLE_TASKBAR_URI = Settings.System.getUriFor(
-            DerpFestSettings.System.ENABLE_TASKBAR);
+            DroidXSettings.System.ENABLE_TASKBAR);
 
     private final Context mContext;
     private final @Nullable Context mNavigationBarPanelContext;
@@ -321,7 +321,7 @@ public class TaskbarManager {
             // Create the illusion of this taking effect immediately
             // Also needed because TaskbarManager inits before SystemUiProxy on start
             boolean enabled = Settings.System.getInt(mContext.getContentResolver(),
-                    DerpFestSettings.System.ENABLE_TASKBAR, 0) == 1;
+                    DroidXSettings.System.ENABLE_TASKBAR, 0) == 1;
             SystemUiProxy.INSTANCE.get(mContext).setTaskbarEnabled(enabled);
 
             // Restart launcher
