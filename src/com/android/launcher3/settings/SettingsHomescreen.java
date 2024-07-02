@@ -54,7 +54,7 @@ import com.android.launcher3.util.SettingsCache;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 
-import com.android.internal.util.superior.OmniJawsClient;
+import com.android.internal.util.droidx.OmniJawsClient;
 
 /**
  * Settings activity for Launcher.

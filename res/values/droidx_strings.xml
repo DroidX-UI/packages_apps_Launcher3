@@ -16,7 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
      <!-- Application name -->
-     <string name="superior_app_name" translatable="false">Superior Launcher</string>
+     <string name="droidx_app_name" translatable="false">DroidX-UI Launcher</string>
 
      <!-- Folder titles -->
      <string name="google_folder_title" translatable="false">Google</string>
@@ -196,15 +196,15 @@
     <string name="quickspace_date_format_minimalistic" translatable="false">EEEE, MMMM d</string>
 
     <!-- QuickSpace: QuickEvent: Device Intro Event -->
-    <string name="quick_event_rom_intro_welcome">Welcome to SuperiorOS!</string>
-    <string name="quick_event_rom_intro_welcome_ext">SuperiorOS time!</string>
+    <string name="quick_event_rom_intro_welcome">Welcome to DroidX-UI!</string>
+    <string name="quick_event_rom_intro_welcome_ext">DroidX-UI time!</string>
     <string-array name="welcome_message_variants">
         <item>Thank you for choosing us</item>
         <item>Loving us? Send us a beer</item>
-        <item>Best Rom Ever.</item>
-        <item>Say hi to us on Telegram</item>
+        <item>DXUI ❤️ AOSP</item>
+        <item>DXUI is Best</item>
         <item>Tap here to begin</item>
-        <item>We love you 3000</item>
+        <item>We ❤️ you 3000</item>
     </string-array>
 
     <!-- QuickSpace: QuickEvent: Greetings -->
@@ -344,16 +344,16 @@
         <item>Oh hey, what\'s up?</item>
         <item>Focus on your tasks</item>
         <item>How many screenshots do you take?</item>
-        <item>Open goodness with SuperiorOS</item>
+        <item>DXUI is filled with Goodness</item>
         <item>Spread love, not havoc</item>
         <item>We didn\'t start the fire!</item>
         <item>Time for some good music</item>
-        <item>\u003C\u003C\u003C\u003C\u003C\u003C\u003C HEAD</item>
-        <item>You need SuperiorOS Premium to see this</item>
+        <item>DXUI will always be Free</item>
+        <item>DXUI ❤️ AOSP</item>
         <item>Remember the Lineage of the Unicorn</item>
-        <item>Enjoy Xtended battery life</item>
+        <item>Enjoy extended battery life</item>
         <item>Starting from the ground zero</item>
-        <item>We love you 3000</item>
+        <item>We ❤️ you 3000</item>
         <item>Delicious even without Sushi</item>
         <item>Do something nice today</item>
         <item>This is best Pixel Experience, isn\'t it?</item>
