@@ -349,7 +349,7 @@ android_library {
 // Build rule for Launcher3 app.
 //
 android_app {
-    name: "DroidX-UI Launcher",
+    name: "DXUILauncher",
     defaults: ["launcher-non-platform-apis-defaults"],
 
     static_libs: [
@@ -498,7 +498,7 @@ android_library {
 
 // Build rule for Quickstep app.
 android_app {
-    name: "DroidX-UI LauncherQuickStep",
+    name: "DXUILauncherQuickStep",
     static_libs: ["Launcher3QuickStepLib"],
     optimize: {
         proguard_flags_files: [":launcher-proguard-rules"],
