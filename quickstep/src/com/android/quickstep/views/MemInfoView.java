@@ -18,7 +18,6 @@ package com.android.quickstep.views;
 
 import android.app.ActivityManager;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
 import android.text.format.Formatter;
@@ -88,7 +87,6 @@ public class MemInfoView extends TextView {
         mWorker = new MemInfoWorker();
 
         mMemInfoText = context.getResources().getString(R.string.meminfo_text);
-        setListener(context);
     }
 
     /* Hijack this method to detect visibility rather than
@@ -142,15 +140,6 @@ public class MemInfoView extends TextView {
             if (memoryGB <= size) return size;
         }
         return knownSizes[knownSizes.length - 1];
-    }
-
-    public void setListener(Context context) {
-        setOnClickListener(view -> {
-            Intent intent = new Intent(Intent.ACTION_MAIN);
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            intent.setClassName("com.android.settings", "com.android.settings.Settings$DevRunningServicesActivity");
-            context.startActivity(intent);
-        });
     }
 
     private class MemInfoWorker implements Runnable {
